@@ -1,23 +1,25 @@
 import { styled } from "@/styles/stitches.config";
 
-export const ContactSection = styled("section", {
-  background: "$grey0",
+export const AboutSection = styled("section", {
+  background: "$grey1",
   padding: "$section 0",
   "@mobile": {
     padding: "$sectionMobile 0",
   },
 });
 
-export const ContactSectionContent = styled("div", {
+export const AboutSectionContent = styled("div", {
+  width: "80%",
   display: "flex",
   justifyContent: "space-between",
   "@mobile": {
-    flexDirection: "column"
+    flexDirection: "column",
   },
 });
 
-export const ContactSectionText = styled("aside", {
-  maxWidth: "26.25rem",
+export const AboutSectionText = styled("aside", {
+  maxWidth: "60.25rem",
+  textAlign: "justify",
   display: "grid",
   gridGap: "$2",
   height: "max-content",
@@ -25,11 +27,11 @@ export const ContactSectionText = styled("aside", {
   top: "8rem",
   "@mobile": {
     position: "static",
-    marginBottom: "$5"
+    marginBottom: "$5",
   },
 });
 
-export const ContactsCards = styled("div", {
+export const AboutsCards = styled("div", {
   display: "flex",
   flexDirection: "column",
   width: "50%",
@@ -38,23 +40,23 @@ export const ContactsCards = styled("div", {
   },
 });
 
-export const ContactCard = styled("div", {
+export const AboutCard = styled("div", {
   width: "100%",
   display: "flex",
   paddingRight: "10rem",
   marginBottom: "6rem",
-  ["& a"]:{
-    "&:hover":{
-        color: "$grey4",
-        cursor: "pointer"
-    }
+  ["& a"]: {
+    "&:hover": {
+      color: "$grey4",
+      cursor: "pointer",
+    },
   },
   "@mobile": {
     paddingRight: "0",
   },
 });
 
-export const ContactCardImage = styled("div", {
+export const AboutCardImage = styled("div", {
   minWidth: "4.5rem",
   height: "4.5rem",
   marginRight: "$2",
@@ -72,10 +74,10 @@ export const ContactCardImage = styled("div", {
   },
   ["&.linkedin"]: {
     background: "linear-gradient(180deg, #4E73FF 0%, #506CCF 100%)",
-  }
+  },
 });
 
-export const ContactCardContent = styled("div", {
+export const AboutCardContent = styled("div", {
   display: "grid",
   gridGap: "$2",
 });

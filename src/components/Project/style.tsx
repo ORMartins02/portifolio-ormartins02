@@ -11,7 +11,7 @@ export const ProjectStack = styled(Flex, {
 });
 
 export const ProjectStackTech = styled("span", {
-  backgroundColor: "$grey1",
+  backgroundColor: "$grey0",
   color: "$grey2",
   padding: "0  0.5rem",
   borderRadius: "$2",
@@ -53,7 +53,7 @@ export const Project = styled("article", {
       },
 
       "&::before": {
-        content: 'New',
+        content: "New",
         position: "absolute",
         top: "5px",
         right: "-4rem",

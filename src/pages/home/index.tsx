@@ -26,6 +26,7 @@ import {
   ProjectAreaWrapperColumns,
   ProjectsAreaContent,
 } from "./style";
+import { AboutMe } from "@/components/AboutMe";
 
 export const Home = (): JSX.Element => {
   const gihubUrl = `https://github.com/${userData.githubUser}`;
@@ -44,29 +45,43 @@ export const Home = (): JSX.Element => {
                 width={"48px"}
                 height={"48px"}
               />
-              <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
+              <Text color="grey4">Olá, meu nome é {userData.nameUser}</Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-            I{" "}
+              A{" "}
               <Text as="span" type="heading1" color="brand1">
-                love
+                arte
               </Text>{" "}
-              creating and{" "}
+              de{" "}
               <Text as="span" type="heading1" color="brand1">
-                developing
+                programar
               </Text>{" "}
-              projects
+              consiste em{" "}
+              <Text as="span" type="heading1" color="brand1">
+                organizar
+              </Text>{" "}
+              e{" "}
+              <Text as="span" type="heading1" color="brand1">
+                dominar
+              </Text>{" "}
+              a{" "}
+              <Text as="span" type="heading1" color="brand1">
+                complexidade.
+              </Text>{" "}
+              <Text type="body1" color="grey2">
+                <i>"Edsger W. Dijkstra"</i>
+              </Text>
             </Text>
             <Text type="body1" color="grey2">
-              Discover here in this environment, created especially for you, all
-              my projects and technologies
+              Aqui estão alguns projetos no qual desenvolvi e contribui nesta
+              minha trajetoria de dev. Jr.
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
-                See Projects
+                Veja meus projetos
               </Button>
               <Button as="a" type="outline" target="_blank" href={portfolioUrl}>
-                See my portfolio source code
+                Veja meu portfolio open source
               </Button>
               <Button
                 color="grey5"
@@ -92,13 +107,7 @@ export const Home = (): JSX.Element => {
           <ProjectAreaWrapperColumns>
             <ProjectsAreaSocialMediaMessage>
               <Text as="h2" type="heading4" color="grey4">
-                My projects
-              </Text>
-              <Text as="p" type="body1" color="grey2">
-                Some of my{" "}
-                <Text as="span" color="brand5">
-                  side projects
-                </Text>
+                Meus projetos
               </Text>
             </ProjectsAreaSocialMediaMessage>
             <ProjectsAreaContent>
@@ -107,6 +116,7 @@ export const Home = (): JSX.Element => {
           </ProjectAreaWrapperColumns>
         </Container>
       </ProjectsArea>
+      <AboutMe />
       <Contacts />
     </main>
   );

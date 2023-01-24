@@ -72,6 +72,7 @@ export const globalStyles = globalCss({
     margin: 0,
     padding: 0,
     fontFamily: "'Inter', sans-serif",
+    lineHeight: "1.5",
     boxSizing: "border-box",
   },
   html: {
@@ -81,7 +82,6 @@ export const globalStyles = globalCss({
 });
 
 export const GlobalStyle = ({ children }: GlobalStyleProps): JSX.Element => {
-
   const theme = createTheme({
     colors: {
       brand1: "#623CEA",
@@ -125,6 +125,7 @@ export const GlobalStyle = ({ children }: GlobalStyleProps): JSX.Element => {
       title4: "1.25rem",
       text1: "1rem",
       text2: "0.875rem",
+      text3: "1.2rem",
 
       // Mobile
       title1Mobile: "$title2",
