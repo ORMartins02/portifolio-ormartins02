@@ -73,7 +73,7 @@ export const Home = (): JSX.Element => {
               </Text>
             </Text>
             <Text type="body1" color="grey2">
-              Aqui estão alguns projetos no qual desenvolvi e contribui nesta
+              Aqui estão alguns projetos nos quais desenvolvi e contribui nesta
               minha trajetoria de dev. Jr.
             </Text>
             <HeaderButtonsArea>
